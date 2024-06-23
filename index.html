@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="keywords" content="width=device-width" initial-scale="1.0"/>
+		<title>农村旅游网站</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				text-decoration: none;
+			}
+			.header{
+				width: 1645px;
+				height: 120px;
+				font-size: 40px;
+				background-color: rgba(60, 182, 0, 0.7);
+				font-family: 隶书;
+				border: ;
+				border-radius: 0px;
+				margin: 0 auto;
+				position: relative;
+				box-shadow: 2px 5px 15px rgba(116, 232, 0, 0.7);
+				}
+			.dl{
+				background-color: #e99b00;
+				float: right;
+				
+				margin-top: -40px;
+				margin-right: 200px;
+				
+			}
+			input{
+				
+				font-size: 30px;
+			}
+			.img1{
+				width: 400px;
+				height: 120px;
+				overflow: hidden;
+				float: left;
+				}
+			.h1{
+				padding-top: 30px;
+			}
+			.nav{
+				width: 1645px;
+				height: 40px;
+				background-color: aliceblue;
+				border: solid black 1px;
+				margin: 0 auto;
+				position: relative;
+			}
+			.nav #li1{
+				float: left;
+			}
+			#li1{
+				float: left;
+				width: 400px;
+				line-height: 40px;
+				text-align: center;
+			}
+			.navlist a{
+				color: #489100;
+				display: block;
+			}
+			.navlist a:hover{
+				background-color: beige;
+			}
+			
+			.banner{
+				    margin: 0 auto;
+					position: relative;
+					width: 1645px;
+					height: 500px;
+					background-color: blanchedalmond;
+					overflow: hidden;
+					border: solid black 1px;
+					box-shadow: 2px 5px 15px rgba(85, 170, 0, 0.7);
+			}
+			#list{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 600%;
+				height: 300px;
+				}
+			#list li{
+					float: left;
+					width: 560px;
+					height: 500px;
+				}
+			#list li img{
+					width: 100%;
+					height: 500px;
+				}
+			.h11{
+				position: relative;
+				margin: 0 auto;
+				font-size: 20px;
+			}
+			.m{
+				width: 1645px;
+				height: 450px;
+				margin: 0 auto;
+				position: relative;
+				display: flex;
+				justify-content: center;
+			}
+			body{
+				margin: 0px;
+				padding: 0px;
+				
+			}
+			.main{
+				width: 300px;
+				height: 400px;
+				margin-top: 100px;
+				margin-left: 50px;
+				float: left;
+				display: flex;
+				justify-content: center;
+				position: relative;
+			}
+			.main img{
+				width: 300px;
+				height: 400px;
+			}
+			.main .cover,.back{
+				width: 300px;
+				height: 400px;
+				position: absolute;
+				transition: transform 1.5s linear;
+				backface-visibility: hidden;
+				cursor: pointer;
+			}
+			.main .cover{
+				transform: perspective(1000px) rotateY(0deg);
+			}
+			.main .back{
+				transform: perspective(1000px) rotateY(180deg);
+				background: url('img/m5.png');
+				background-size: cover;
+			}
+			.main:hover .cover{
+				transform: perspective(1000px) rotateY(-180deg);
+			}
+			.main:hover .back{
+				transform: perspective(1000px) rotateY(0deg);
+			}
+			.main .back h1{
+				text-align: center;
+				font-family: 微软雅黑;
+				font-weight: bold;
+			}
+			.main .back p{
+				font-family: 微软雅黑;
+				font-weight: bold;
+				text-align: justify;
+				line-height: 35px;
+				font-size: 30px;
+			}
+			.main2{
+				position: relative;
+				width: 1000px;
+			    height: 500px;			
+				margin: 20px auto;
+				background: url('img/m26.png') no-repeat;
+				overflow:hidden;
+				}
+			.main2 h3 {
+				position: absolute;
+				left: -250px;
+				top: 0px;
+				width: 250px;
+				height: 500px;
+				line-height: 299px;
+				background: rgba(255, 255, 0, 0.5);
+				text-align: center;
+				font-size:36px;
+				color: #008700;
+				transition: all 1s;				
+				}
+			.main2:hover h3 {
+				position: absolute;
+				left: 0;
+				top:  0;
+				}
+			.footer{
+				width: 1650px;
+				height: 100px;
+				background-color: rgba(0, 0, 0, 0.7);
+				padding-top: 30px;
+				color: white;
+				font-size: 40px;
+				font-family: 隶书;
+				border: solid black 2px;
+				border-radius: 0px;
+				margin: 0 auto;
+				text-align: center;
+				position: relative;
+				box-shadow: 2px 5px 15px rgba(170, 170, 127, 0.7);
+			}
+			.lll{
+				float: right;
+				margin-top: -40px;
+				margin-right: 150px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="img1">
+				<img src="img/logo1.png" alt="" />
+			</div>
+			<form action="" class="h1">
+				搜索：
+				<input type="text" placeholder="" maxlength="10"/>
+				<input type="submit" value="提交"/>
+			</form>
+			<div class="dl">
+				<a href="denglu.html">
+					<input type="submit" class="gub" value="登录"/>
+				</a>
+			</div>
+			<div class="lll">
+				<div>
+					<a href="gr.html">
+						<input type="submit" class="gub" value="用户主页" />
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<ul class="navlist">
+				<li id="li1">
+					<a href="index.html">首页</a>
+				</li>
+				<li id="li1">
+					<a href="xc2.html">旅游攻略</a>
+				</li>
+				<li id="li1">
+					<a href="xc1.html">旅游景点</a>
+				</li>
+				<li id="li1">
+					<a href="xc3.html">特色民宿</a>
+				</li>
+			</ul>
+		</div>
+		<div class="banner">
+			<ul id="list">
+				<li>
+					<img src="img/tu1.png"/>
+				</li>
+				<li>
+					<img src="img/tu2.png"/>
+				</li>
+				<li>
+					<img src="img/tu3.png"/>
+				</li>
+				<li>
+					<img src="img/tu4.png"/>
+				</li>
+			</ul>
+		</div>
+		<div class="h11">
+			<h1 align=center>
+				<strong>
+					<br />
+					-------地区简介-------
+				</strong>
+			</h1>	
+		</div>
+		<div class="m">
+			<div class="main">
+				<div class="cover">
+					<img src="img/m1.png" alt="" />
+				</div>
+				<div class="back">
+					<h1>乔木村</h1>
+					<p>
+						静谧的村庄，飘渺的晨雾，在“神的自留地”面前，无论是数码还是胶片都是那么的苍白无力。
+					</p>
+				</div>
+			</div>
+			<div class="main">
+				<div class="cover">
+					<img src="img/m2.png" alt="" />
+				</div>
+				<div class="back">
+					<h1>古堰画乡</h1>
+					<p>
+						看瓯江落日余晖，看瓯江上的点点帆船，独特的渔家风情，古朴的民风，千年的古槐树，写生的学生，原来这就是世外桃源的模样。
+					</p>
+				</div>
+			</div>
+			<div class="main">
+				<div class="cover">
+					<img src="img/m3.png" alt="" />
+				</div>
+				<div class="back">
+					<h1>绿江村</h1>
+					<p>
+						绿江村这是一个神奇的村庄，它小到地图都搜不到，却能“一眼看两江，一脚踏三界”。
+						绿江村既有北方的雄伟壮丽，又有南方的灵秀清新。绿油油的麦田、水天一色的江岸、悠闲漂过的渔船，都是绿江独有的风光。
+					</p>
+				</div>
+			</div>
+			<div class="main">
+				<div class="cover">
+					<img src="img/m4.png" alt="" />
+				</div>
+				<div class="back">
+					<h1>窑湾古镇</h1>
+					<p>
+						窑湾古镇这是一座有着千年历史的水乡古镇，旧房檐、断墙垣、静流水，都似在诉说着它古老的故事。
+						走在青石板铺就的街道，轻抚过斑驳的青砖黛瓦，古镇的风里似乎都弥漫着古老的香气。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="h11">
+			<h2 align=center>
+				<strong>
+					<br />
+					<br />
+					<br />
+					-------热门推荐-------
+				</strong>
+			</h2>	
+		</div>
+		<div class="main2">
+			<h3>杭州乡村风光</h3>
+		</div>
+		<div class="footer">
+			<sup>
+				<em>
+					<strong>
+						计算机三班庞绘宇20220000217&copy;
+					</strong>
+				</em>
+			</sup>
+		</div>
+	</body>
+	<script>
+		var banner = document.querySelector(".banner");
+		var list =  document.querySelector("#list");
+		var img =  document.querySelector("#list li img");
+		var uli = list.children;
+		var index = 0;
+		setInterval(move,2000);
+		function move(){
+			if(index < uli.length-1){
+				index++;
+				list.style.left = -index * img.offsetWidth+"px";
+				list.style.transition = 'left 1s';
+				}else{
+					index=0;
+					list.style.left = -index * img.offsetWidth+"px";
+					list.style.transition = 'left 0s';
+				}
+		};
+	</script>
+</html>
